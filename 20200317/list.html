@@ -6,6 +6,14 @@
   <meta charset="utf-8">
   <title></title>
   <style>
+    div,
+    hr {
+      /* *로 줬을 때 ul li도 margin을 먹어서 이쁘게 안나온다. */
+      /* 따라서 ul li 를 제외한 div와 hr에다만 margin을 준다. */
+      margin: 20px;
+      border: 2px solid green;
+    }
+
     img {
       width: 100px;
       height: 100px;
@@ -18,7 +26,15 @@
       float: left;
     }
 
+    hr,
+    #hol {
+      clear: both;
+    }
 
+
+
+    /* 안쪽에 있는 여백 : padding
+    바깥에 있는 여백 : margin*/
   </style>
 </head>
 
@@ -27,15 +43,50 @@
   <hr>
   <div class="a">
     <ul>
-      <li><a href="americano.html"><img src="벚꽃.jpg"></a>아메리카노</li>
-      <li><a href="caffelatte.html"><img src="벚꽃.jpg"></a>카페라떼</li>
-      <li><a href="caffe.html"><img src="벚꽃.jpg"></a>카푸치노</li>
+      <!-- _blank : 새로운 윈도우에서 새로운 페이지를 연다
+           _self : 현재 윈도우에 새로운 페이지를 적재
+           _parent : 부모 프레임에 새로운 페이지를 적재한다.
+           _top : 현재 윈도우에 새로운 페이지를 적재하고 모든 프레임을 취소한다.
+           parent, top은 요즘 브라우저에서 의미가 없다(tab을 사용하기때문)
+       -->
+      <li><a href="../20200317/americano.html" target="_blank"><img src="벚꽃.jpg"></a></li>
+      <li><a href="../20200317/caffelatte.html" target="_blank"><img src="벚꽃.jpg"></a></li>
+      <li><a href="../20200317/caffe.html" target="_blank"><img src="벚꽃.jpg"></a></li>
     </ul>
   </div>
 
+  <div class="a">
+    <ul>
+      <li><a href="americano.html"><img src="벚꽃.jpg"></a></li>
+      <li><a href="caffelatte.html"><img src="벚꽃.jpg"></a></li>
+      <li><a href="caffe.html"><img src="벚꽃.jpg"></a></li>
+    </ul>
+  </div>
+
+  <div>
+    <ul>
+      <li>
+        <ol>
+          <li>봄</li>
+          <li>여름</li>
+          <li>가을</li>
+        </ol>
+    </ul>
+    <ul>
+      <li>
+        <ol>
+          <li>매화</li>
+          <li>복수초</li>
+          <li>산수유</li>
+        </ol>
+      </li>
+    </ul>
+    </li>
+
+  </div>
 
   <hr>
-  <h1>번호있는 리스트</h1>
+
   <div class="b">
     <ol>
       <li><a href="americano.html">아메리카노</a></li>
@@ -52,6 +103,7 @@
     </ul>
   </div>
 
+  <h1 id="hol">번호있는 리스트</h1>
 </body>
 
 </html>
