@@ -11,7 +11,7 @@
 </style>
 <!-- 목차 -->
 <div id ="div1">
-<a href ="20200316/summary.html">20200316</a><br>
-<a href ="20200317/summary.html">20200317</a><br>
-<a href ="20200318/summary.html">20200318</a><br>
+<a href ="20200316/summary.md">20200316</a><br>
+<a href ="20200317/summary.md">20200317</a><br>
+<a href ="20200318/summary.md">20200318</a><br>
 </div>
