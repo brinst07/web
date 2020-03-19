@@ -4,6 +4,7 @@
         float : center;
         width : 200px;
         text-align : center;
+        margin : auto;
     }
   
 </style>
