@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/mystyle.css" type = "text/css">
+    <style>
+        /* 아이디가 똑같으면 안된다.(중복되면 안됨) */
+        /* 만일 여러개에 같은 스타일을 부여하고 싶다면 클래스를 사용하자 */
+        table#tab1{
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 50px;
+            border: 5px solid green;
+            border-width: 10px;
+            border-top-color: red;
+            border-bottom-color: hotpink;
+            
+        }
+        #tab1 th{
+            width: 200px;
+            height: 50px;
+        }
+        #tab1 td{
+           
+            height: 50px;
+        }
+
+        table#tab2{
+            border : 3px solid grey;
+        }
+
+        #tab2 th{
+            width: 1200px;
+            height : 150px;
+        }
+     
+
+        #tab2 td{
+            
+            height: 50px;
+            
+        }
+
+        table#tab3{
+            border: 3px solid blue;
+            text-align: center;
+        }
+
+        #tab3 td{
+            border: 1px dotted gray;
+
+        }
+
+        #a{
+            width : 100px'
+        }
+
+        #b{
+            width: 100px;
+        }
+
+        #c{
+            width: 300px;
+            
+        }
+
+        #d{
+            width: 100px;
+        }
+
+        #e{
+            width: 100px;
+        }
+
+        .td3{
+            text-align: left;
+        }
+        
+        caption{
+            font-size: large;
+            font-weight: bolder;
+            margin-top: 15px;
+            /* 캡션의 위치를 조정하는 것 caption-side */
+            caption-side :bottom;
+            }
+    </style>
+   
+</head>
+<body>
+    <pre>
+        행병합 : 위아래로 줄 합치기
+        열병합 : 좌우로 칸 합치기
+        &lt;td rowspan="2">&lt;/td&gt;
+        &lt;td colspan="3">3행 1열&lt;/td>
+    </pre>
+    <table id = "tab1" border="2px">
+        <tr>
+            <th>1열</th>
+            <th>2열</th>
+            <th>3열</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+        <tr>
+            <td colspan="3">3행 1열</td>
+        </tr>
+    </table>
+        <hr>
+    <table id = "tab2" border="1px">
+        <tr>
+            <th colspan="2">a</th>
+            <th colspan="2">a</th>
+            <th>a</th>
+            <th>a</th>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td colspan="2" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+        <hr>
+    <table id = "tab3">
+        <caption>왜이렇게 다운돼있어 뭐가 문제야 say something~</caption>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td id="a">강좌이름</td>
+            <td id="b">강의자</td>
+            <td id="c">소개</td>
+            <td id="d">강좌코드</td>
+            <td id="e">실습비</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td class="td3">c</td>
+            <td>d</td>
+            <td>e</td>
+        </tr>
+
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td class="td3">c</td>
+            <td>d</td>
+            <td>e</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td class="td3">c</td>
+            <td>d</td>
+            <td>e</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td class="td3">c</td>
+            <td>d</td>
+            <td>e</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <!-- 외부 스타일 연결 적용 -->
+  <link rel="stylesheet" href="css/mystyle.css" type = "text/css">
   <style media="screen">
 
 
@@ -32,16 +34,20 @@
 
     table#tab2{
       border : 3px double gray;
-      border-collapse : collapse;
+      /* border-collapse : collapse; */
       margin : 50px;
+      border-collapse: separate;
+      border-spacing: 10px;
     }
 
     #tab2 #title{
       width : 700px;
+      
     }
     #tab2 th{
       background : black;
       color : white;
+      background: lightgreen;
     }
     #tab2 #date{
       width : 200px;
@@ -54,10 +60,28 @@
       width : 200px;
 
     }
+
+    pre{
+      border: 1px solid gray;
+      border-left: 2px dotted green;
+      border-top: 5px groove blue;
+      border-bottom: 3px solid greenyellow;
+      border-right: 4px inset maroon;
+    }
   </style>
 </head>
 
 <body>
+  <pre>외부스타일적용
+    &lt;link rel="stylesheet" href="css/mystyle.css" type = "text/css"&gt;
+  </pre>
+  <pre>
+    table#tab1{
+      border : 3px solid blue;
+      border-collapse : collapse;
+      margin : 50px;
+    }
+  </pre>
   <table id = "tab1" border = "1">
     <tr>
       <th>이름</th>
@@ -81,8 +105,17 @@
     </tr>
   </table>
   <hr>
-
-  <table id = "tab2" border = "1">
+<!-- border -left 하면 왼쪽만 설정 가능하듯이 내가 원하는 테이블의 모서리를 style줄수 있다. -->
+<pre>
+  table #tab2{
+    border : 3px double gray;
+    /* border-collapse : collapse; */
+    margin : 50px;
+    border-collapse: separate;
+    border-spacing: 10px;
+  }
+</pre>  
+<table id = "tab2" border = "1">
     <tr>
       <th id = "title">영화제목</th>
       <th id = "date">년도</th>

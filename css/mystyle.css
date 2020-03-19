@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* charset "" <- 대소문자 구별하지 않는다. */
+pre{
+    font-size: 10px;
+    border: 1px solid gray;
+    border-left: 2px dotted green;
+    border-top: 5px groove blue;
+    border-bottom: 3px solid greenyellow;
+    border-right: 4px inset maroon;
+    margin: 10px;
+}
