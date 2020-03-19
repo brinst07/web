@@ -1,13 +1,11 @@
 <style>
     #div1{
         border : 5px ridge lightgray;
-        float :left;
+        float : center;
         width : 200px;
         text-align : center;
     }
-    #div2{
-        float : rigth;
-    }
+  
 </style>
 <!-- 목차 -->
 <div id ="div1">
