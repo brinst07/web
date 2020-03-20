@@ -3,7 +3,7 @@
 ## <span id = "id">1. id를 이용한 페이지 이동</span>
 > 긴 글에 인덱스를 만들어 원하는 부분을 빠르게 찾을 수 있게 해보자
 
-<video src = "lee.mp4" width = "300px" height = "300px"></video>
+<video src = "lee.mp4" width = "600px" height = "600px"></video>
 
     <li><a herf = "#id1">1번</a></li>
     <h3 id = "#id1">아에이</h3>
