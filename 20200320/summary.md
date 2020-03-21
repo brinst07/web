@@ -13,14 +13,16 @@
 # 2. video태그
 * video 태그를 사용해서 로컬영역에 있는 video를 업로드 할 수 있다.
 ~~~
-<video src = "iframe.mp4"></video>
+<video src = "iframe.mp4" width = "500px" height = "500px"></video>
 ~~~
 
----
+<hr>
 
 # 3. audio 태그
+
 * 마찬가지로 audio태그를 이용하면 음악을 넣을 수도 있다.
 <audio src = "../multi/old_pop.mp3"></audio>
+<br>
 ~~~
 <audio src = "../multi/old_pop.mp3"></audio>
 ~~~
