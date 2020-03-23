@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../css/mystyle.css" rel="stylesheet" type="">
+<style>
+form {
+	border: 2px solid blue;
+	padding: 20px;
+	line-height: 30px;
+}
+
+h1 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+</style>
+</head>
+<body>
+	<pre>
+	<h1>Get</h1>
+	&lt;form action="input.jsp" method="get">
+	데이타 입력후 전송하면 url 주소 뒤에 ? 쿼리 스트림이 붙는다.
+	http://localhost/webpro/0323/input.jsp?id=asdfsdf&pw=fsdsfd
+</pre>
+	<form action="input.jsp" method="get">
+		ID : <input type="text" name="id" size = "10"><br> 
+		PW : <input	type="password" name="pw"><br>
+		성별 : <input type="radio" name = "gender" value = "male">남자
+		<input type="radio" name = "gender" value = "female">여자<br>
+		<input type="submit" value="전송"> 
+		<input type="reset" value="취소">
+		<!--value는 필수가 아니라 선택이다.  -->
+	</form>
+	<pre>
+	<h1>Post</h1>
+	&lt;form action="input.jsp" method="post">
+	데이타 입력 후 전송하면
+	http://localhost/webpro/0323/input.jsp
+	입력데이타는 request header 속에 감춰서 서버로 보낸다.	
+</pre>
+	<form action="input.jsp" method="post">
+ID : <input type="text" name="id"><br> 
+		PW : <input	type="password" name="pw"><br>
+		성별 : <input type="radio" name = "gender" value = "male">남자
+		<input type="radio" name = "gender" value = "female">여자<br>
+		좋아하는 과일
+		<input type = "checkbox" name = "fruits" value = "apple">사과
+		<input type = "checkbox" name = "fruits" value = "grape">포도
+		<input type = "checkbox" name = "fruits" value = "pear">배
+		<br>		
+		<input type="submit" value="전송"> 
+		<input type="reset" value="취소">
+		<!--value는 필수가 아니라 선택이다.  -->
+	</form>
+</body>
+</html>
