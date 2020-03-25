@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../CSS/mystyle.css" rel="stylesheet" type="text/css">
+
+	<style>
+	form{
+		border : 1px solid orange;
+		padding : 20px;
+		margin: : 30px;
+		line-height: 40px;
+	}
+	</style>
+	<script type="text/javascript">
+		function pro() {
+			//alert("내가 만듬 함수")
+			
+			//선택한 컬러 값을 가져온다.
+			//실행 브라우저의배경색을 변경
+			
+			//id가 color인 요소에 접근하다
+		var vcolor = document.getElementById('color');
+
+		//color에서 선택한 값(value)을 가져온다.
+		cvalue= vcolor.value;
+		
+		//실행브라우저의 배경색을 변경
+		//document.body.style.background = cvalue;
+		
+		list = document.getElementsByTagName('pre')
+		for(var i=0; i<list.length; i++){
+			list[i].style.background =cvalue;
+			}
+		}
+	</script>
+</head>
+<body>
+<pre>
+속성
+required : 필수 항목, 반드시 입력
+readonly : 읽기 전용 필드 , 입력 불가
+
+placeholder : 예시를 표시
+pattern : 입력 데이터의 규칙 ( 입력의 형태를 정규식)
+		  [0-9] 0~9 사이의 숫자
+		  [a-z] a~z 사이의 숫자
+		  {3} 3자리
+		  {5,10} 5~10자리 
+title	: 말풍선
+</pre>
+
+	<form name="ff" action="input.jsp" method="post">
+	이름<input type="text" required pattern="[a-zA-Z가-힣]{3,10}" autofocus><br>
+	생년원일<input type="date"><br>
+	생년원일<input type="text"><br>	
+	전화번호<input type="text" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="010-1234-1234"><br>
+	이메일<input type="text" name="email" placeholder="public@naver.com" required><br>
+	<input type="text" value="hello" title="홍길동" readonly><br>
+	<input type="submit" value="전송">
+	</form>
+	<br><br>
+	<pre>
+	script에서 body의 요소에 접근하는 방법
+	
+	id를 이용  : document.getElementById('id이름')
+	tag이름을 이용 : document.getElementsByTagName('태그명')[배열]
+				 document.getElementsByTagName('input')[]
+	</pre>
+	
+	<form>
+	색상선택 : <input id="color" type="color">
+
+	<br>
+	<input type="button" value="실행" onclick="pro()" >	
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

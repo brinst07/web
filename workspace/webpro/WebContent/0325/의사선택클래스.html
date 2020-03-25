@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/mystyle.css">
+<style>
+	img{
+		width : 100px;
+		height : 100px;
+	}
+	a , p{
+		font-size : 1.5em;
+	}
+	a:link{
+		color : hotpink;
+		text-decoration : none;
+	}
+	a:visited{
+		color : green;
+	}
+	a:hover{
+		color : yellow;
+		text-decoration : overline;
+	}
+	a:active{
+		color : blue;
+		font-size : 1.5em;
+		text-decoration : underline;
+	}
+	p:hover{
+		color : yellow;
+		background-color : red;
+		text-decoration : line-through;
+	}
+	
+ 	a:nth-child(2n){
+		border : 3px solid blue;
+	} 
+	
+	td{
+		width : 200px;
+		height : 40px;
+		text-align : center;
+	}
+	
+	td:nth-child(2n){
+		background: lightgreen;
+	}
+	
+	td[title]{
+		background : orange;
+	}
+	
+	td[class=td2]{
+		font-size : 2.0em;
+		color : red;
+	}
+	
+</style>
+</head>
+<body>
+<pre>
+	의사 클래스를 이용한 선택
+	의사클래스 : 특정상태 또는 구조에 따라서 결정
+	특정상태 a:link , a:visited a:hover a:active p:hover
+	구조 : a:nth-child(2n)
+</pre>
+	<p>점심시간이 다가오고 있어요</p>
+	<p>맛있는거 먹기 </p>
+	
+	<div>
+		<a href = "../images/커피.jpg">피자</a>
+		<a href = "../images/국화.jpg">라면</a>
+		<a href = "../images/뱅쇼.jpg">김밥</a>
+		<a href = "../images/셔틀콕.jpg">떡볶이</a>
+	</div>
+	
+	<table border = 1>
+		<tr>
+			<td title="111">1</td>
+			<td title="222">2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td class = "td2">1</td>
+			<td class = "td2">2</td>
+			<td class = "td2">3</td>
+			<td>4</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+		</tr>
+		
+	</table>
+</body>
+</html>

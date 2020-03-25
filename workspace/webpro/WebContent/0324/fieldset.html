@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../CSS/mystyle.css" rel="styLesheet" type="text/css"> 
+	<style>
+		fieldset{
+			width : 30%;
+			padding : 20px;
+		}
+		label{
+			display : inline-block;
+			width : 100px;
+			height : 20px;
+		}
+		legend{
+			border : 1px solid orange;
+		}
+		
+	</style>	
+</head>
+<body>
+	<fieldset>
+		<legend>인적사항 입력</legend>
+		이름<input type="text" name="name"><br> 
+		전화번호<input type="text" name="tel"><br>
+		         주소<input type="text" name="addr"><br>
+		           성별<input type="radio" name= "gender" checked="checked" value="남자">남자
+		         <input type= "radio" name="gender" value="여자">여자
+	</fieldset>
+	<br><br>
+	<pre>
+	&lt;label>적용
+	&lt;label> 태그는 인라인 요소이다.
+	필요한 만큼, 정해진 만큼만 자리를 차지하고 크기를 조절 할 수 없다.
+	
+	인라인 속성을 블럭속성으로 변경한다
+	display 스타일을 설정
+	inline : 줄이 바뀌지 않는다.
+	block : 자동으로 줄바꿈, 크기조절 할 수 있다.
+	inline-block : 줄이 바뀌지 않으면서 크기조절을 할수 있다.
+	none; : 화면에 표시하지 않는다.
+	</pre>
+	
+	
+	<fieldset>
+		<legend>인적사항 입력</legend>
+			<label for="name">이름</label>
+			<input type="text" id="name" name="name"><br> 
+			<label for="tel">전화번호</label>
+			<input type="text" id="tel" name="tel"><br>
+			<label for="id">주소</label>
+			<input type="text" id="addr" name="addr"><br>
+		<fieldset>
+			<legend>성별</legend>
+				<label for="male">남자</label>
+				<input type="radio" id="male" value="남자" name="gender"><br>
+				<label for="">여자</label>
+				<input type="radio" id="female" value = "여자" name="gender">
+		</fieldset>
+	</fieldset>
+</body>
+</html>

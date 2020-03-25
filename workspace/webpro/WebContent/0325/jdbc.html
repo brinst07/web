@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/mystyle.css">
+<style>
+	*{
+		font-size : 2.0em;
+	}
+	
+	.sub{
+		background : crimson;
+		margin -left : 50px;
+		width : 100px;
+		height : 50px;
+		border-radius : 100px;
+	}
+</style>
+</head>
+<body>
+   <pre>
+      전송버튼 클릭하면 id를 서버로 전송한다
+      서버의 select.jsp 페이지를 요청한다
+      요청시 post 방식을 이용한다.
+   </pre>
+   <form action = "select.jsp" method="post">
+   아이디<input type="text" name="id"><br>
+   <input type = "submit" class = "sub" value="전송"><br>
+   </form>
+
+</body>
+</html>
